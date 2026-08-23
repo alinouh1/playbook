@@ -6,6 +6,7 @@
   border-radius: 9999px;
   border: 1px solid var(--color-line);
   background-color: white;
+  background-image: linear-gradient(white, white);
   padding: 0.375rem 0.75rem;
   font-family: var(--font-body);
   font-size: 0.75rem;
@@ -18,4 +19,12 @@
 .copy-button:hover {
   border-color: var(--color-brass);
   color: var(--color-ink);
+}
+
+/* Mobile responsive fixes */
+@media (max-width: 1024px) {
+  .copy-button {
+    background-color: white !important;
+    background-image: linear-gradient(white, white) !important;
+  }
 }

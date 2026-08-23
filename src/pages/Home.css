@@ -154,6 +154,16 @@
   .audience-table td, .audience-table th {
     padding: 0.5rem !important;
   }
+  
+  /* Force all interactive elements */
+  button, .hero-button-primary, .hero-button-secondary {
+    background-image: linear-gradient(white, white) !important;
+  }
+  
+  .hero-button-primary {
+    background-color: var(--color-green) !important;
+    background-image: linear-gradient(var(--color-green), var(--color-green)) !important;
+  }
 }
 
 /* Android-specific color fixes */

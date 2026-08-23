@@ -22,7 +22,12 @@ export default function App() {
       <button 
         className="md:hidden fixed top-4 right-4 z-30 p-2 bg-white rounded-md shadow-md text-ink"
         onClick={() => setSidebarOpen(true)}
-        style={{ touchAction: 'manipulation', backgroundColor: '#ffffff', color: '#0d2b1e' }}
+        style={{ 
+          touchAction: 'manipulation', 
+          backgroundColor: '#ffffff', 
+          backgroundImage: 'linear-gradient(#ffffff, #ffffff)',
+          color: '#0d2b1e' 
+        }}
       >
         <FiMenu size={24} />
       </button>
@@ -32,7 +37,10 @@ export default function App() {
         <div 
           className="md:hidden fixed inset-0 bg-black/30 z-30"
           onClick={() => setSidebarOpen(false)}
-          style={{ backgroundColor: 'rgba(0, 0, 0, 0.3)' }}
+          style={{ 
+            backgroundColor: 'rgba(0, 0, 0, 0.3)',
+            backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3))'
+          }}
         />
       )}
 
