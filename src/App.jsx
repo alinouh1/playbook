@@ -6,10 +6,13 @@ import Login from "./pages/Login.jsx";
 import SamsungBrowserNotice from "./components/SamsungBrowserNotice";
 
 export default function App() {
-  const [authed, setAuthed] = useState(false);
+  const [authed, setAuthed] = useState(() => {
+    return localStorage.getItem("authed") === "true";
+  });
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const handleLogin = () => {
+    localStorage.setItem("authed", "true");
     setAuthed(true);
   };
 
