@@ -223,6 +223,29 @@
     background-color: #ffffff !important;
     color: #0d2b1e !important;
   }
+  
+  /* Force CSS variables override for Samsung */
+  :root {
+    --color-ink: #0d2b1e !important;
+    --color-ink-soft: #45564c !important;
+    --color-paper: #faf7f1 !important;
+    --color-paper-raised: #f6ded0 !important;
+    --color-signal: #de6a2e !important;
+    --color-signal-soft: #f6ded0 !important;
+    --color-brass: #b78a46 !important;
+    --color-brass-soft: #e7d9bf !important;
+    --color-line: #ddd3c0 !important;
+    --color-green: #0a3206 !important;
+  }
+  
+  /* Force all elements to use correct colors */
+  * {
+    color-scheme: only light !important;
+  }
+  
+  section, div, span, p, h1, h2, h3, h4, h5, h6 {
+    color-scheme: only light !important;
+  }
 }
 
 @media (min-width: 640px) {
