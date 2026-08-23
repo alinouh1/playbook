@@ -6,6 +6,84 @@
   gap: 3rem;
 }
 
+/* Mobile color corrections */
+@media (max-width: 767px) {
+  .home-container {
+    background-color: #faf7f1 !important;
+  }
+  
+  .hero-section {
+    background-color: #F6DED0 !important;
+    color: #0d2b1e !important;
+  }
+  
+  .hero-title {
+    color: #0d2b1e !important;
+  }
+  
+  .hero-description {
+    color: #45564c !important;
+  }
+  
+  .about-section {
+    background-color: #F6DED0 !important;
+    color: #0d2b1e !important;
+  }
+  
+  .about-title {
+    color: #0d2b1e !important;
+  }
+  
+  .goals-container {
+    background-color: #F6DED0 !important;
+    color: #0d2b1e !important;
+  }
+  
+  .goal-card {
+    background-color: #ffffff !important;
+    color: #0d2b1e !important;
+  }
+  
+  .audience-container {
+    background-color: rgba(5, 70, 42, 0.33) !important;
+    color: #faf7f1 !important;
+  }
+  
+  .audience-box {
+    background-color: rgba(7, 62, 38, 0.9) !important;
+    color: #faf7f1 !important;
+  }
+  
+  .pain-points-container {
+    background-color: #F6DED0 !important;
+    color: #0d2b1e !important;
+  }
+  
+  .marketing-funnel-container {
+    background-color: #ffffff !important;
+    color: #0d2b1e !important;
+  }
+  
+  .strategic-pillars-container {
+    background-color: #F6DED0 !important;
+    color: #0d2b1e !important;
+  }
+  
+  /* Force text colors */
+  h1, h2, h3, h4, h5, h6 {
+    color: #0d2b1e !important;
+  }
+  
+  p, span, div {
+    color: inherit !important;
+  }
+  
+  /* Fix background colors for all sections */
+  section {
+    background-color: inherit !important;
+  }
+}
+
 @media (min-width: 640px) {
   .home-container {
     padding: 2.5rem 1.5rem;
@@ -572,7 +650,7 @@
   position: relative;
   border-radius: 20px;
   border: 1px solid var(--color-line);
-  background-color: #05462a54;
+  background-color: rgba(5, 70, 42, 0.33);
   padding: 1.75rem 1.5rem;
   margin-top: 1.5rem;
   margin-bottom: 2.5rem;
@@ -606,7 +684,7 @@
   flex: 1;
   border-radius: 1rem;
   border: 1px solid var(--color-line);
-  background-color: #073e26;
+  background-color: rgba(7, 62, 38, 0.9);
   padding: 1.5rem;
 }
 
@@ -1126,12 +1204,30 @@
 }
 
 .strategic-pillars-container {
-  border-radius: 28px;
+  border-radius: 20px;
   border: 1px solid var(--color-line);
   background-color: #F6DED0;
-  padding: 2.5rem;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  padding: 2rem 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 640px) {
+  .strategic-pillars-container {
+    padding: 2.25rem 2rem;
+    border-radius: 24px;
+    margin-top: 1.75rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .strategic-pillars-container {
+    padding: 2.5rem 2.5rem;
+    border-radius: 28px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
 }
 
 .strategic-pillars-header {

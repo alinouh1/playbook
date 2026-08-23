@@ -12,9 +12,6 @@ html {
   -webkit-tap-highlight-color: transparent;
   text-size-adjust: 100%;
   scroll-behavior: smooth;
-  color-profile: sRGB;
-  color-interpolation: sRGB;
-  color-interpolation-filters: sRGB;
 }
 
 body {
@@ -22,8 +19,6 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color-rendering: optimizeQuality;
-  image-rendering: optimizeQuality;
   font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
   -webkit-font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
   font-variant-ligatures: common-ligatures;
@@ -70,10 +65,6 @@ ul, ol {
   --color-ink-line: rgba(250, 247, 241, 0.14); /* hairline borders on ink */
   --color-green: #0a3206;        /* bright green for buttons */
 
-  /* Color space consistency */
-  --color-space: sRGB;
-  --color-rendering: optimizeQuality;
-
   --font-display: "Cairo", "Inter", sans-serif;
   --font-body: "Inter", "Cairo", sans-serif;
   --font-mono: "IBM Plex Mono", monospace;
@@ -83,6 +74,18 @@ body {
   background-color: var(--color-paper);
   color: var(--color-ink);
   font-family: var(--font-body);
+}
+
+/* Mobile-specific color corrections */
+@media (max-width: 767px) {
+  body {
+    background-color: #faf7f1 !important;
+    color: #0d2b1e !important;
+  }
+  
+  * {
+    color-scheme: light !important;
+  }
 }
 
 ::selection {
