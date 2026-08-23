@@ -14,6 +14,11 @@ html {
   scroll-behavior: smooth;
 }
 
+html {
+  color-scheme: only light;
+  background-color: #faf7f1;
+}
+
 body {
   min-height: 100vh;
   text-rendering: optimizeLegibility;
@@ -68,6 +73,10 @@ ul, ol {
   --font-display: "Cairo", "Inter", sans-serif;
   --font-body: "Inter", "Cairo", sans-serif;
   --font-mono: "IBM Plex Mono", monospace;
+}
+
+:root {
+  color-scheme: only light;
 }
 
 body {
