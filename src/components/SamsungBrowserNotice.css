@@ -1,0 +1,155 @@
+.samsung-browser-notice {
+  position: fixed;
+  z-index: 999999;
+
+  left: 16px;
+  right: 16px;
+  bottom: 20px;
+
+  max-width: 520px;
+
+  margin: 0 auto;
+
+  padding: 18px 20px;
+
+  border: 1px solid #b78a46;
+  border-radius: 18px;
+
+  background: #faf7f1 !important;
+  background-image: linear-gradient(#faf7f1, #faf7f1) !important;
+  color: #0d2b1e !important;
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.25);
+
+  direction: rtl;
+  font-family: "Cairo", "Inter", sans-serif;
+}
+
+.samsung-browser-notice-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.samsung-browser-notice-icon {
+  flex: 0 0 auto;
+
+  width: 38px;
+  height: 38px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  background: #f6ded0 !important;
+  background-image: linear-gradient(#f6ded0, #f6ded0) !important;
+  color: #0d2b1e !important;
+
+  font-size: 18px;
+}
+
+.samsung-browser-notice strong {
+  color: #0d2b1e !important;
+  font-weight: 700;
+}
+
+.samsung-browser-notice p {
+  margin-top: 6px;
+
+  color: #45564c !important;
+
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.samsung-browser-notice-close {
+  position: absolute;
+
+  top: 8px;
+  left: 10px;
+
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+
+  background: transparent !important;
+  color: #0d2b1e !important;
+
+  font-size: 22px;
+  line-height: 1;
+  
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  
+  transition: opacity 0.2s;
+}
+
+.samsung-browser-notice-close:hover {
+  opacity: 0.7;
+}
+
+/* Mobile responsive fixes */
+@media (max-width: 768px) {
+  .samsung-browser-notice {
+    left: 12px;
+    right: 12px;
+    bottom: 16px;
+    
+    padding: 14px 16px;
+    
+    max-width: calc(100% - 24px);
+  }
+  
+  .samsung-browser-notice-content {
+    gap: 12px;
+  }
+  
+  .samsung-browser-notice-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+  
+  .samsung-browser-notice p {
+    font-size: 13px;
+  }
+  
+  .samsung-browser-notice strong {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .samsung-browser-notice {
+    left: 8px;
+    right: 8px;
+    bottom: 12px;
+    
+    padding: 12px 14px;
+    border-radius: 16px;
+  }
+  
+  .samsung-browser-notice-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .samsung-browser-notice-icon {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+  }
+  
+  .samsung-browser-notice p {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  
+  .samsung-browser-notice strong {
+    font-size: 14px;
+  }
+}

@@ -3,6 +3,7 @@ import { FiMenu } from "react-icons/fi";
 import Sidebar from "./components/Sidebar.jsx";
 import Home from "./pages/Home.jsx";
 import Login from "./pages/Login.jsx";
+import SamsungBrowserNotice from "./components/SamsungBrowserNotice";
 
 export default function App() {
   const [authed, setAuthed] = useState(false);
@@ -52,6 +53,8 @@ export default function App() {
       }}>
         <Home />
       </main>
+
+      <SamsungBrowserNotice />
     </div>
   );
 }

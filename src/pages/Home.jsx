@@ -3,7 +3,6 @@ import html2pdf from 'html2pdf.js';
 import TopBar from "../components/TopBar";
 import SectionHeader from "../components/SectionHeader";
 import CopyButton from "../components/CopyButton";
-import Sidebar from "../components/Sidebar";
 import { FaChartLine, FaBullseye, FaLightbulb, FaMobileAlt, FaUser, FaUsers, FaGraduationCap, FaBriefcase, FaDollarSign, FaBuilding, FaMapMarkerAlt, FaSadTear, FaBrain, FaCreditCard, FaQuestion, FaGem } from "react-icons/fa";
 import { MdInsights, MdVerified } from "react-icons/md";
 import "./Home.css";
@@ -1254,7 +1253,6 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <Sidebar />
     </>
   );
 }
