@@ -14,6 +14,8 @@ html {
   scroll-behavior: smooth;
   color-scheme: only light;
   background-color: #faf7f1;
+  /* Linear gradient trick to bypass heuristic dark mode */
+  background-image: linear-gradient(#faf7f1, #faf7f1);
 }
 
 body {
@@ -26,6 +28,8 @@ body {
   font-variant-ligatures: common-ligatures;
   font-variant-numeric: oldstyle-nums;
   color-scheme: only light;
+  /* Linear gradient trick to bypass heuristic dark mode */
+  background-image: linear-gradient(#faf7f1, #faf7f1);
 }
 
 img, picture, video, canvas, svg {
@@ -197,6 +201,8 @@ body {
   background-color: var(--color-paper);
   color: var(--color-ink);
   font-family: var(--font-body);
+  /* Linear gradient trick to bypass heuristic dark mode */
+  background-image: linear-gradient(var(--color-paper), var(--color-paper));
 }
 
 ::selection {

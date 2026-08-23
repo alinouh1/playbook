@@ -8,6 +8,7 @@
   justify-content: space-between;
   border-bottom: 1px solid var(--color-line);
   background-color: rgba(250, 247, 241, 0.98);
+  background-image: linear-gradient(rgba(250, 247, 241, 0.98), rgba(250, 247, 241, 0.98));
   padding: 1rem 1.5rem;
   backdrop-filter: blur(10px);
 }
@@ -15,6 +16,7 @@
 @media (max-width: 1024px) {
   .topbar {
     background-color: #faf7f1 !important;
+    background-image: linear-gradient(#faf7f1, #faf7f1) !important;
     color: #0d2b1e !important;
   }
   
@@ -31,6 +33,7 @@
 @media screen and (-webkit-min-device-pixel-ratio: 0) and (max-width: 1024px) {
   .topbar {
     background-color: #faf7f1 !important;
+    background-image: linear-gradient(#faf7f1, #faf7f1) !important;
     color: #0d2b1e !important;
   }
 }
@@ -39,6 +42,7 @@
 @media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px) {
   .topbar {
     background-color: #faf7f1 !important;
+    background-image: linear-gradient(#faf7f1, #faf7f1) !important;
     color: #0d2b1e !important;
   }
   
@@ -109,6 +113,7 @@
 .topbar-button-primary {
   border-radius: 9999px;
   background-color: var(--color-ink);
+  background-image: linear-gradient(var(--color-ink), var(--color-ink));
   padding: 0.625rem 1.25rem;
   font-family: var(--font-display);
   font-size: 0.875rem;
@@ -128,6 +133,7 @@
   border-radius: 9999px;
   border: 1px solid var(--color-line);
   background-color: white;
+  background-image: linear-gradient(white, white);
   padding: 0.625rem 1.25rem;
   font-family: var(--font-display);
   font-size: 0.875rem;
@@ -138,4 +144,5 @@
 
 .topbar-button-secondary:hover {
   background-color: var(--color-paper-raised);
+  background-image: linear-gradient(var(--color-paper-raised), var(--color-paper-raised));
 }
