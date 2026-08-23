@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  /* Signature palette — a station platform after dusk: deep pine, brass rail, signal-orange */
+  --color-ink: #0d2b1e;          /* deep pine green — nav, headlines */
+  --color-ink-soft: #45564c;     /* muted green-grey — body text */
+  --color-paper: #faf7f1;        /* warm platform-board off-white */
+  --color-paper-raised: #f6ded0; /* card surface, one step up from paper */
+  --color-signal: #de6a2e;       /* signal-orange — the single accent, spent carefully */
+  --color-signal-soft: #f6ded0;  /* tint of signal for chips/backgrounds */
+  --color-brass: #b78a46;        /* rail-line brass — the "station line" motif */
+  --color-brass-soft: #e7d9bf;
+  --color-line: #ddd3c0;         /* hairline borders on paper */
+  --color-ink-line: rgba(250, 247, 241, 0.14); /* hairline borders on ink */
+  --color-green: #0a3206;        /* bright green for buttons */
+
+  --font-display: "Cairo", "Inter", sans-serif;
+  --font-body: "Inter", "Cairo", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+}
+
+::selection {
+  background-color: var(--color-signal-soft);
+  color: var(--color-ink);
+}
+
+/* The Line — a rail motif used as a scroll spine / station map. Sparse, load-bearing, on-brief. */
+.rail-track {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    var(--color-brass) 0px,
+    var(--color-brass) 4px,
+    transparent 4px,
+    transparent 10px
+  );
+  width: 2px;
+}
+
+.station-dot {
+  box-shadow: 0 0 0 4px var(--color-paper);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .fade-up {
+    animation: fadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
