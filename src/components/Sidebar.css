@@ -22,9 +22,16 @@
   transform: translateX(0); /* Visible on mobile when open */
 }
 
+@media (min-width: 640px) {
+  .sidebar {
+    width: 260px;
+  }
+}
+
 @media (min-width: 768px) {
   .sidebar {
     transform: translateX(0); /* Always visible on desktop */
+    width: 280px;
   }
 }
 

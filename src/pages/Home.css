@@ -2,8 +2,27 @@
 .home-container {
   margin: 0 auto;
   max-width: 80rem;
-  padding: 3.5rem 2rem;
-  gap: 4rem;
+  padding: 2rem 1rem;
+  gap: 3rem;
+}
+
+@media (min-width: 640px) {
+  .home-container {
+    padding: 2.5rem 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .home-container {
+    padding: 3rem 2rem;
+    gap: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-container {
+    padding: 3.5rem 2rem;
+  }
 }
 
 .fade-up {
@@ -23,12 +42,26 @@
 
 /* Hero Section */
 .hero-section {
-  border-radius: 28px;
+  border-radius: 20px;
   border: 1px solid var(--color-line);
-   background-color: #F6DED0;
-  padding: 3rem;
+  background-color: #F6DED0;
+  padding: 2rem 1.5rem;
   text-align: center;
   box-shadow: 0 20px 50px -25px rgba(13, 43, 30, 0.25);
+}
+
+@media (min-width: 640px) {
+  .hero-section {
+    padding: 2.5rem 2rem;
+    border-radius: 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-section {
+    padding: 3rem 2.5rem;
+    border-radius: 28px;
+  }
 }
 
 .hero-eyebrow {
@@ -43,13 +76,25 @@
   margin: 1.25rem auto 0;
   max-width: 48rem;
   font-family: var(--font-display);
-  font-size: 2.25rem;
+  font-size: 1.75rem;
   font-weight: 800;
   line-height: 1.2;
   color: var(--color-ink);
 }
 
+@media (min-width: 640px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+}
+
 @media (min-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
   .hero-title {
     font-size: 3rem;
   }
@@ -59,9 +104,21 @@
   margin: 1.5rem auto 0;
   max-width: 32rem;
   font-family: var(--font-body);
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.625;
   color: var(--color-ink-soft);
+}
+
+@media (min-width: 640px) {
+  .hero-description {
+    font-size: 1.0625rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-description {
+    font-size: 1.125rem;
+  }
 }
 
 .hero-buttons {
@@ -143,12 +200,30 @@
 
 /* Who is Growth Station Section */
 .about-section {
-  border-radius: 28px;
+  border-radius: 20px;
   border: 1px solid var(--color-line);
   background-color: #F6DED0;
-  padding: 2.5rem;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  padding: 2rem 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 640px) {
+  .about-section {
+    padding: 2.25rem 2rem;
+    border-radius: 24px;
+    margin-top: 1.75rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-section {
+    padding: 2.5rem 2.5rem;
+    border-radius: 28px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
 }
 
 .about-header {
@@ -178,12 +253,19 @@
 
 .about-grid {
   display: grid;
-  gap: 2rem;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .about-grid {
+    gap: 1.75rem;
+  }
 }
 
 @media (min-width: 768px) {
   .about-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
 }
 
@@ -348,12 +430,30 @@
 }
 
 .goals-container {
-  border-radius: 28px;
+  border-radius: 20px;
   border: 1px solid var(--color-line);
   background-color: #F6DED0;
-  padding: 2.5rem;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  padding: 2rem 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 640px) {
+  .goals-container {
+    padding: 2.25rem 2rem;
+    border-radius: 24px;
+    margin-top: 1.75rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .goals-container {
+    padding: 2.5rem 2.5rem;
+    border-radius: 28px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
 }
 
 .goals-grid {
@@ -470,12 +570,30 @@
 
 .audience-container {
   position: relative;
-  border-radius: 28px;
+  border-radius: 20px;
   border: 1px solid var(--color-line);
   background-color: #05462a54;
-  padding: 2.25rem;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  padding: 1.75rem 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 640px) {
+  .audience-container {
+    padding: 2rem 2rem;
+    border-radius: 24px;
+    margin-top: 1.75rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .audience-container {
+    padding: 2.25rem 2.5rem;
+    border-radius: 28px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
 }
 
 .audience-content {
@@ -584,12 +702,30 @@
 }
 
 .pain-points-container {
-  border-radius: 28px;
+  border-radius: 20px;
   border: 1px solid var(--color-line);
   background-color: #F6DED0;
-  padding: 2.5rem;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  padding: 2rem 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 640px) {
+  .pain-points-container {
+    padding: 2.25rem 2rem;
+    border-radius: 24px;
+    margin-top: 1.75rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .pain-points-container {
+    padding: 2.5rem 2.5rem;
+    border-radius: 28px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
 }
 
 .pain-points-header {
@@ -786,14 +922,32 @@
 }
 
 .marketing-funnel-container {
-  border-radius: 28px;
+  border-radius: 20px;
   border: 1px solid var(--color-line);
   background-color: white;
-  padding: 3rem;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  padding: 2rem 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
   position: relative;
   overflow: hidden;
+}
+
+@media (min-width: 640px) {
+  .marketing-funnel-container {
+    padding: 2.5rem 2rem;
+    border-radius: 24px;
+    margin-top: 1.75rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .marketing-funnel-container {
+    padding: 3rem 2.5rem;
+    border-radius: 28px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
 }
 
 .marketing-funnel-container::before {

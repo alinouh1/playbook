@@ -22,6 +22,7 @@ export default function App() {
       <button 
         className="md:hidden fixed top-4 right-4 z-30 p-2 bg-white rounded-md shadow-md text-ink"
         onClick={() => setSidebarOpen(true)}
+        style={{ touchAction: 'manipulation' }}
       >
         <FiMenu size={24} />
       </button>
@@ -36,7 +37,10 @@ export default function App() {
 
       <Sidebar isOpen={sidebarOpen} closeSidebar={() => setSidebarOpen(false)} />
       
-      <main className="w-full md:mr-[280px] flex-1">
+      <main className="w-full md:mr-[280px] flex-1" style={{ 
+        paddingTop: '60px',
+        minHeight: '100vh'
+      }}>
         <Home />
       </main>
     </div>
