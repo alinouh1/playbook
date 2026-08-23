@@ -2,127 +2,98 @@
 <html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0, user-scalable=yes" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+
+    <!-- App / PWA -->
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-    <meta name="theme-color" content="#faf7f1" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="default"
+    />
+
+    <!-- IMPORTANT:
+         The website is LIGHT ONLY.
+         Prevent browsers from automatically converting
+         the page into a dark color scheme. -->
     <meta name="color-scheme" content="only light" />
-    <meta name="supported-color-schemes" content="light" />
-    <meta name="forced-color-adjust" content="none" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="browser-mode" content="light" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover" />
+
     <meta name="theme-color" content="#faf7f1" />
     <meta name="msapplication-TileColor" content="#faf7f1" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-    <style>
-      /* Force light mode on all devices - MAXIMUM PRIORITY */
-      html {
-        color-scheme: only light !important;
-        background-color: #faf7f1 !important;
-        -webkit-text-size-adjust: 100% !important;
-      }
-      
-      body {
-        color-scheme: only light !important;
-        background-color: #faf7f1 !important;
-        color: #0d2b1e !important;
-        -webkit-font-smoothing: antialiased !important;
-        -moz-osx-font-smoothing: grayscale !important;
-      }
-      
-      * {
-        color-scheme: only light !important;
-      }
-      
-      /* Force all sections to use correct colors */
-      section, div, span, p, h1, h2, h3, h4, h5, h6 {
-        color-scheme: only light !important;
-      }
-      
-      /* Android Chrome specific fix */
-      @supports (-webkit-touch-callout: none) {
-        html, body {
-          background-color: #faf7f1 !important;
-          color: #0d2b1e !important;
-        }
-        * {
-          color-scheme: only light !important;
-        }
-      }
-      
-      /* Samsung Internet browser specific fix - STRONGER */
-      @supports (-webkit-appearance: none) and (not (orientation: landscape)) {
-        html, body {
-          background-color: #faf7f1 !important;
-          color: #0d2b1e !important;
-          -webkit-font-smoothing: antialiased !important;
-        }
-        * {
-          color-scheme: only light !important;
-        }
-      }
-      
-      /* Samsung Galaxy specific fix - ENHANCED */
-      @media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px) {
-        html, body {
-          background-color: #faf7f1 !important;
-          color: #0d2b1e !important;
-        }
-        * {
-          color-scheme: only light !important;
-        }
-      }
-      
-      /* Samsung browser specific - using vendor prefix */
-      @media screen and (-webkit-min-device-pixel-ratio: 0) {
-        html, body {
-          background-color: #faf7f1 !important;
-          color: #0d2b1e !important;
-        }
-      }
-      
-      /* Force light colors for Samsung devices */
-      @media screen and (device-width: 360px) and (device-height: 640px),
-             screen and (device-width: 360px) and (device-height: 740px),
-             screen and (device-width: 412px) and (device-height: 915px),
-             screen and (device-width: 360px) and (device-height: 800px) {
-        html, body {
-          background-color: #faf7f1 !important;
-          color: #0d2b1e !important;
-        }
-        * {
-          color-scheme: only light !important;
-        }
-      }
-      
-      /* Prevent dark mode in Samsung Internet */
-      @media (prefers-color-scheme: dark) {
-        html, body {
-          background-color: #faf7f1 !important;
-          color: #0d2b1e !important;
-        }
-        * {
-          color-scheme: only light !important;
-        }
-      }
-    </style>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta
+      name="format-detection"
+      content="telephone=no"
+    />
+
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+
     <title>Growth Station — Launch Playbook 2026</title>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;600;700;800;900&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Material Symbols -->
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL@20..48,100..700,0..1&display=swap"
       rel="stylesheet"
     />
+
+    <!--
+      Small critical style.
+
+      This is intentionally minimal.
+      We DON'T try to detect Samsung.
+      We simply declare that the whole application
+      uses one light color scheme.
+    -->
+    <style>
+      :root {
+        color-scheme: only light;
+      }
+
+      html {
+        color-scheme: only light;
+        background: #faf7f1;
+      }
+
+      body {
+        margin: 0;
+        min-width: 320px;
+        min-height: 100vh;
+        background: #faf7f1;
+        color: #0d2b1e;
+      }
+
+      #root {
+        min-height: 100vh;
+      }
+    </style>
   </head>
+
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+
+    <script
+      type="module"
+      src="/src/main.jsx"
+    ></script>
   </body>
 </html>
