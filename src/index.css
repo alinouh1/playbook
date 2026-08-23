@@ -113,6 +113,29 @@ ul, ol {
   }
 }
 
+/* Samsung Internet browser specific fixes */
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px) {
+  html, body {
+    background-color: #faf7f1 !important;
+    color: #0d2b1e !important;
+    -webkit-font-smoothing: antialiased !important;
+  }
+  
+  * {
+    color-scheme: only light !important;
+  }
+}
+
+/* Samsung Galaxy specific fixes */
+@media screen and (device-width: 360px) and (device-height: 640px),
+       screen and (device-width: 360px) and (device-height: 740px),
+       screen and (device-width: 412px) and (device-height: 915px) {
+  html, body {
+    background-color: #faf7f1 !important;
+    color: #0d2b1e !important;
+  }
+}
+
 /* Force button colors on mobile */
 @media (max-width: 1024px) {
   button {

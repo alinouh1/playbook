@@ -110,6 +110,11 @@
     color: #0d2b1e !important;
   }
   
+  .content-calendar-container {
+    background-color: #ffffff !important;
+    color: #0d2b1e !important;
+  }
+  
   /* Force text colors for all elements */
   h1, h2, h3, h4, h5, h6 {
     color: #0d2b1e !important;
@@ -122,6 +127,20 @@
   /* Fix background colors for all sections */
   section {
     background-color: inherit !important;
+  }
+  
+  /* Improve card layout on mobile */
+  .goal-card, .pillar-card, .calendar-card {
+    padding: 1rem !important;
+  }
+  
+  /* Improve table layout on mobile */
+  .audience-table {
+    font-size: 0.8rem !important;
+  }
+  
+  .audience-table td, .audience-table th {
+    padding: 0.5rem !important;
   }
 }
 
@@ -159,6 +178,49 @@
   
   .strategic-pillars-container {
     background-color: #F6DED0 !important;
+    color: #0d2b1e !important;
+  }
+}
+
+/* Samsung Internet browser specific fixes */
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px) {
+  .hero-section {
+    background-color: #F6DED0 !important;
+    color: #0d2b1e !important;
+  }
+  
+  .about-section {
+    background-color: #F6DED0 !important;
+    color: #0d2b1e !important;
+  }
+  
+  .goals-container {
+    background-color: #F6DED0 !important;
+    color: #0d2b1e !important;
+  }
+  
+  .audience-container {
+    background-color: rgba(5, 70, 42, 0.33) !important;
+    color: #faf7f1 !important;
+  }
+  
+  .pain-points-container {
+    background-color: #F6DED0 !important;
+    color: #0d2b1e !important;
+  }
+  
+  .marketing-funnel-container {
+    background-color: #ffffff !important;
+    color: #0d2b1e !important;
+  }
+  
+  .strategic-pillars-container {
+    background-color: #F6DED0 !important;
+    color: #0d2b1e !important;
+  }
+  
+  .content-calendar-container {
+    background-color: #ffffff !important;
     color: #0d2b1e !important;
   }
 }
@@ -459,9 +521,23 @@
   margin-top: 20px;
 }
 
+@media (max-width: 1024px) {
+  .positioning-container {
+    padding: 1.5rem 1rem;
+    border-radius: 20px;
+  }
+}
+
 .positioning-grid {
   display: grid;
   gap: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .positioning-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -472,6 +548,12 @@
 
 .positioning-main {
   grid-column: span 7;
+}
+
+@media (max-width: 1024px) {
+  .positioning-main {
+    grid-column: span 1;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -488,6 +570,18 @@
   background-color: var(--color-ink);
   padding: 2.5rem;
   color: var(--color-paper);
+}
+
+@media (max-width: 1024px) {
+  .uvp-box {
+    padding: 1.5rem 1rem;
+    border-radius: 20px;
+  }
+  
+  .uvp-text {
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+  }
 }
 
 .uvp-copy-wrapper {
@@ -507,6 +601,14 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 1.25rem;
   grid-column: span 5;
+}
+
+@media (max-width: 1024px) {
+  .positioning-pillars {
+    grid-template-columns: 1fr;
+    grid-column: span 1;
+    gap: 1rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -759,12 +861,33 @@
   gap: 2rem;
 }
 
+@media (max-width: 1024px) {
+  .audience-content {
+    gap: 1.5rem;
+  }
+}
+
 .audience-box {
   flex: 1;
   border-radius: 1rem;
   border: 1px solid var(--color-line);
   background-color: rgba(7, 62, 38, 0.9);
   padding: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .audience-box {
+    padding: 1rem;
+  }
+  
+  .audience-box-title {
+    font-size: 1rem !important;
+  }
+  
+  .audience-table td {
+    font-size: 0.8rem !important;
+    padding: 0.5rem !important;
+  }
 }
 
 .audience-box-header {
@@ -1360,6 +1483,25 @@
   align-self: flex-start;
 }
 
+@media (max-width: 767px) {
+  .strategic-pillars-pagination {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    position: static;
+    min-width: auto;
+    margin-bottom: 1.5rem;
+  }
+  
+  .pillar-number-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 0.75rem;
+    margin: 0;
+  }
+}
+
 @media (min-width: 768px) {
   .strategic-pillars-pagination {
     border-right: 2px solid var(--color-brass);
@@ -1572,6 +1714,13 @@
   overflow: hidden;
 }
 
+@media (max-width: 1024px) {
+  .content-calendar-container {
+    padding: 1.5rem 1rem;
+    border-radius: 20px;
+  }
+}
+
 .content-calendar-container::before {
   content: "";
   position: absolute;
@@ -1626,6 +1775,13 @@
   z-index: 1;
 }
 
+@media (max-width: 1024px) {
+  .content-calendar-body {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
 /* Sticky numbers column on the right */
 .content-calendar-pagination {
   display: flex;
@@ -1645,6 +1801,19 @@
   min-width: 60px;
 }
 
+@media (max-width: 1024px) {
+  .content-calendar-pagination {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: static;
+    order: 1;
+    min-width: auto;
+    gap: 0.5rem;
+    padding: 0.75rem;
+  }
+}
+
 /* Scrollable cards box on the left */
 .content-calendar-scroll-box {
   flex: 1;
@@ -1659,6 +1828,15 @@
   background: var(--color-paper, #fafaf8);
   scroll-behavior: smooth;
   order: 1;
+}
+
+@media (max-width: 1024px) {
+  .content-calendar-scroll-box {
+    height: auto;
+    max-height: 60vh;
+    order: 2;
+    padding: 1rem;
+  }
 }
 
 .content-calendar-scroll-box::-webkit-scrollbar {

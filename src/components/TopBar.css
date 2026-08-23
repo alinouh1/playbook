@@ -35,6 +35,22 @@
   }
 }
 
+/* Samsung Internet browser specific topbar fixes */
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px) {
+  .topbar {
+    background-color: #faf7f1 !important;
+    color: #0d2b1e !important;
+  }
+  
+  .topbar-title {
+    color: #0d2b1e !important;
+  }
+  
+  .topbar-eyebrow {
+    color: #b78a46 !important;
+  }
+}
+
 @media (min-width: 640px) {
   .topbar {
     padding: 1.125rem 1.75rem;
