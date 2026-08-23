@@ -12,9 +12,6 @@ html {
   -webkit-tap-highlight-color: transparent;
   text-size-adjust: 100%;
   scroll-behavior: smooth;
-}
-
-html {
   color-scheme: only light;
   background-color: #faf7f1;
 }
@@ -28,6 +25,7 @@ body {
   -webkit-font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
   font-variant-ligatures: common-ligatures;
   font-variant-numeric: oldstyle-nums;
+  color-scheme: only light;
 }
 
 img, picture, video, canvas, svg {
@@ -58,24 +56,40 @@ ul, ol {
 
 @theme {
   /* Signature palette — a station platform after dusk: deep pine, brass rail, signal-orange */
-  --color-ink: #0d2b1e;          /* deep pine green — nav, headlines */
-  --color-ink-soft: #45564c;     /* muted green-grey — body text */
-  --color-paper: #faf7f1;        /* warm platform-board off-white */
-  --color-paper-raised: #f6ded0; /* card surface, one step up from paper */
-  --color-signal: #de6a2e;       /* signal-orange — the single accent, spent carefully */
-  --color-signal-soft: #f6ded0;  /* tint of signal for chips/backgrounds */
-  --color-brass: #b78a46;        /* rail-line brass — the "station line" motif */
+  --color-ink: #0d2b1e;
+  --color-ink-soft: #45564c;
+  --color-paper: #faf7f1;
+  --color-paper-raised: #f6ded0;
+  --color-signal: #de6a2e;
+  --color-signal-soft: #f6ded0;
+  --color-brass: #b78a46;
   --color-brass-soft: #e7d9bf;
-  --color-line: #ddd3c0;         /* hairline borders on paper */
-  --color-ink-line: rgba(250, 247, 241, 0.14); /* hairline borders on ink */
-  --color-green: #0a3206;        /* bright green for buttons */
+  --color-line: #ddd3c0;
+  --color-ink-line: rgba(250, 247, 241, 0.14);
+  --color-green: #0a3206;
 
   --font-display: "Cairo", "Inter", sans-serif;
   --font-body: "Inter", "Cairo", sans-serif;
   --font-mono: "IBM Plex Mono", monospace;
+
+  /* Fluid spacing — scales smoothly between mobile and tablet/desktop */
+  --space-xs: clamp(0.75rem, 1.8vw, 1rem);
+  --space-sm: clamp(1rem, 2.5vw, 1.5rem);
+  --space-md: clamp(1.5rem, 3.5vw, 2.5rem);
+  --space-lg: clamp(2rem, 4.5vw, 3.5rem);
+  --space-xl: clamp(2.5rem, 5.5vw, 4rem);
+
+  /* Fluid radii */
+  --radius-sm: clamp(12px, 2vw, 16px);
+  --radius-md: clamp(16px, 3vw, 24px);
+  --radius-lg: clamp(20px, 4vw, 28px);
 }
 
 :root {
+  color-scheme: only light;
+}
+
+* {
   color-scheme: only light;
 }
 
@@ -85,24 +99,12 @@ body {
   font-family: var(--font-body);
 }
 
-/* Mobile-specific color corrections */
-@media (max-width: 767px) {
-  body {
-    background-color: #faf7f1 !important;
-    color: #0d2b1e !important;
-  }
-  
-  * {
-    color-scheme: light !important;
-  }
-}
-
 ::selection {
   background-color: var(--color-signal-soft);
   color: var(--color-ink);
 }
 
-/* The Line — a rail motif used as a scroll spine / station map. Sparse, load-bearing, on-brief. */
+/* The Line — a rail motif used as a scroll spine / station map. */
 .rail-track {
   background-image: repeating-linear-gradient(
     to bottom,
