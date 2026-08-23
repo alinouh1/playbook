@@ -6,8 +6,8 @@
   gap: 3rem;
 }
 
-/* Mobile color corrections */
-@media (max-width: 767px) {
+/* Mobile color corrections - Force desktop colors on all mobile devices */
+@media (max-width: 1024px) {
   .home-container {
     background-color: #faf7f1 !important;
   }
@@ -34,6 +34,15 @@
     color: #0d2b1e !important;
   }
   
+  .about-text {
+    color: #45564c !important;
+  }
+  
+  .about-card {
+    background-color: #ffffff !important;
+    color: #0d2b1e !important;
+  }
+  
   .goals-container {
     background-color: #F6DED0 !important;
     color: #0d2b1e !important;
@@ -44,6 +53,14 @@
     color: #0d2b1e !important;
   }
   
+  .goal-title {
+    color: #0d2b1e !important;
+  }
+  
+  .goal-list {
+    color: #45564c !important;
+  }
+  
   .audience-container {
     background-color: rgba(5, 70, 42, 0.33) !important;
     color: #faf7f1 !important;
@@ -51,6 +68,82 @@
   
   .audience-box {
     background-color: rgba(7, 62, 38, 0.9) !important;
+    color: #faf7f1 !important;
+  }
+  
+  .audience-box-title {
+    color: #faf7f1 !important;
+  }
+  
+  .pain-points-container {
+    background-color: #F6DED0 !important;
+    color: #0d2b1e !important;
+  }
+  
+  .pain-points-title {
+    color: #0d2b1e !important;
+  }
+  
+  .pain-point-text {
+    color: #0d2b1e !important;
+  }
+  
+  .marketing-funnel-container {
+    background-color: #ffffff !important;
+    color: #0d2b1e !important;
+  }
+  
+  .marketing-funnel-title {
+    color: #0d2b1e !important;
+  }
+  
+  .funnel-stage-title {
+    color: #0d2b1e !important;
+  }
+  
+  .strategic-pillars-container {
+    background-color: #F6DED0 !important;
+    color: #0d2b1e !important;
+  }
+  
+  .strategic-pillars-title {
+    color: #0d2b1e !important;
+  }
+  
+  /* Force text colors for all elements */
+  h1, h2, h3, h4, h5, h6 {
+    color: #0d2b1e !important;
+  }
+  
+  p, span, div, li {
+    color: inherit !important;
+  }
+  
+  /* Fix background colors for all sections */
+  section {
+    background-color: inherit !important;
+  }
+}
+
+/* Android-specific color fixes */
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (max-width: 1024px) {
+  .hero-section {
+    background-color: #F6DED0 !important;
+    color: #0d2b1e !important;
+  }
+  
+  .about-section {
+    background-color: #F6DED0 !important;
+    color: #0d2b1e !important;
+  }
+  
+  .goals-container {
+    background-color: #F6DED0 !important;
+    color: #0d2b1e !important;
+  }
+  
+  .audience-container {
+    background-color: rgba(5, 70, 42, 0.33) !important;
     color: #faf7f1 !important;
   }
   
@@ -67,20 +160,6 @@
   .strategic-pillars-container {
     background-color: #F6DED0 !important;
     color: #0d2b1e !important;
-  }
-  
-  /* Force text colors */
-  h1, h2, h3, h4, h5, h6 {
-    color: #0d2b1e !important;
-  }
-  
-  p, span, div {
-    color: inherit !important;
-  }
-  
-  /* Fix background colors for all sections */
-  section {
-    background-color: inherit !important;
   }
 }
 

@@ -18,7 +18,27 @@
   transform: translateX(100%); /* Hidden by default on mobile */
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
+  .sidebar {
+    background-color: #ffffff !important;
+    color: #0d2b1e !important;
+  }
+  
+  .sidebar-nav-link {
+    color: #45564c !important;
+  }
+  
+  .sidebar-nav-link.active {
+    color: #de6a2e !important;
+  }
+  
+  .sidebar-nav-label {
+    color: #45564c !important;
+  }
+}
+
+/* Android-specific sidebar fixes */
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (max-width: 1024px) {
   .sidebar {
     background-color: #ffffff !important;
     color: #0d2b1e !important;

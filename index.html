@@ -10,6 +10,27 @@
     <meta name="color-scheme" content="only light" />
     <meta name="supported-color-schemes" content="light" />
     <meta name="forced-color-adjust" content="none" />
+    <meta name="format-detection" content="telephone=no" />
+    <style>
+      /* Force light mode on all devices */
+      :root {
+        color-scheme: only light !important;
+      }
+      * {
+        color-scheme: only light !important;
+      }
+      html, body {
+        background-color: #faf7f1 !important;
+        color: #0d2b1e !important;
+      }
+      /* Android Chrome specific fix */
+      @supports (-webkit-touch-callout: none) {
+        html, body {
+          background-color: #faf7f1 !important;
+          color: #0d2b1e !important;
+        }
+      }
+    </style>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Growth Station — Launch Playbook 2026</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
