@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { FiCheck } from "react-icons/fi";
+import { FiCheck, FiX } from "react-icons/fi";
 import "./Sidebar.css";
 import logoDark from "../assets/logo-dark.png";
 
@@ -44,7 +44,7 @@ const stops = [
   },
 ];
 
-export default function Sidebar() {
+export default function Sidebar({ isOpen, closeSidebar }) {
   const [activeSection, setActiveSection] = useState("");
   const [activeSubItem, setActiveSubItem] = useState("");
 
@@ -113,7 +113,15 @@ export default function Sidebar() {
   }, []);
 
   return (
-    <aside className="sidebar">
+    <aside className={`sidebar ${isOpen ? "open" : ""}`}>
+      {/* Mobile Close Button */}
+      <button 
+        className="md:hidden absolute top-4 left-4 p-2 text-ink z-50 bg-paper rounded-full shadow-sm border border-line"
+        onClick={closeSidebar}
+      >
+        <FiX size={20} />
+      </button>
+
       <div className="sidebar-header">
         <img src={logoDark} alt="Growth Station Logo" className="sidebar-logo-image" />
       </div>
