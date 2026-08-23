@@ -2,6 +2,7 @@
 .login-root {
   min-height: 100vh;
   background-color: #faf7f1; /* Light paper color */
+  background-image: linear-gradient(#faf7f1, #faf7f1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,6 +50,7 @@
   max-width: 500px; /* Increased from 400px */
   min-height: 450px; /* Added to increase height */
   background: #0a3206;
+  background-image: linear-gradient(#0a3206, #0a3206);
   backdrop-filter: blur(28px);
   -webkit-backdrop-filter: blur(28px);
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -61,6 +63,105 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+/* Mobile responsive fixes */
+@media (max-width: 768px) {
+  .login-card {
+    max-width: 90%;
+    padding: 3rem 2rem;
+    min-height: auto;
+  }
+  
+  .login-logo {
+    height: 100px;
+  }
+  
+  .login-input {
+    padding: 0.75rem 2.5rem 0.75rem 0.875rem;
+    font-size: 0.9rem;
+  }
+  
+  .login-btn {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.88rem;
+  }
+  
+  .login-form {
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    max-width: 95%;
+    padding: 2.5rem 1.5rem;
+    border-radius: 20px;
+  }
+  
+  .login-logo {
+    height: 80px;
+  }
+  
+  .login-input {
+    padding: 0.7rem 2.25rem 0.7rem 0.75rem;
+    font-size: 0.85rem;
+  }
+  
+  .login-btn {
+    padding: 0.7rem 1rem;
+    font-size: 0.85rem;
+    min-height: 44px;
+  }
+  
+  .login-label {
+    font-size: 0.65rem;
+  }
+}
+
+/* Mobile color fixes for Samsung browser */
+@media (max-width: 1024px) {
+  .login-root {
+    background-color: #faf7f1 !important;
+    background-image: linear-gradient(#faf7f1, #faf7f1) !important;
+  }
+  
+  .login-card {
+    background: #0a3206 !important;
+    background-image: linear-gradient(#0a3206, #0a3206) !important;
+  }
+  
+  .login-input {
+    background: rgba(255, 255, 255, 0.95) !important;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)) !important;
+  }
+  
+  .login-input:focus {
+    background: #ffffff !important;
+    background-image: linear-gradient(#ffffff, #ffffff) !important;
+  }
+  
+  .login-btn {
+    background: #ffffff !important;
+    background-image: linear-gradient(#ffffff, #ffffff) !important;
+  }
+}
+
+/* Samsung browser specific fixes */
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px) {
+  .login-root {
+    background-color: #faf7f1 !important;
+    background-image: linear-gradient(#faf7f1, #faf7f1) !important;
+  }
+  
+  .login-card {
+    background: #0a3206 !important;
+    background-image: linear-gradient(#0a3206, #0a3206) !important;
+  }
+  
+  * {
+    color-scheme: only light !important;
+  }
 }
 
 /* Top badge */
