@@ -27,7 +27,7 @@
 */
 
 :root {
-  color-scheme: only light;
+  color-scheme: light dark;
 
   /* Main palette */
   --color-ink: #0d2b1e;

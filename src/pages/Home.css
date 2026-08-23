@@ -6,270 +6,6 @@
   gap: 3rem;
 }
 
-/* Mobile color corrections - Force desktop colors on all mobile devices */
-@media (max-width: 1024px) {
-  .home-container {
-    background-color: #faf7f1 !important;
-    background-image: linear-gradient(#faf7f1, #faf7f1) !important;
-  }
-  
-  .hero-section {
-    background-color: #F6DED0 !important;
-    background-image: linear-gradient(#F6DED0, #F6DED0) !important;
-    color: #0d2b1e !important;
-  }
-  
-  .hero-title {
-    color: #0d2b1e !important;
-  }
-  
-  .hero-description {
-    color: #45564c !important;
-  }
-  
-  .about-section {
-    background-color: #F6DED0 !important;
-    background-image: linear-gradient(#F6DED0, #F6DED0) !important;
-    color: #0d2b1e !important;
-  }
-  
-  .about-title {
-    color: #0d2b1e !important;
-  }
-  
-  .about-text {
-    color: #45564c !important;
-  }
-  
-  .about-card {
-    background-color: #ffffff !important;
-    background-image: linear-gradient(#ffffff, #ffffff) !important;
-    color: #0d2b1e !important;
-  }
-  
-  .goals-container {
-    background-color: #F6DED0 !important;
-    background-image: linear-gradient(#F6DED0, #F6DED0) !important;
-    color: #0d2b1e !important;
-  }
-  
-  .goal-card {
-    background-color: #ffffff !important;
-    background-image: linear-gradient(#ffffff, #ffffff) !important;
-    color: #0d2b1e !important;
-  }
-  
-  .goal-title {
-    color: #0d2b1e !important;
-  }
-  
-  .goal-list {
-    color: #45564c !important;
-  }
-  
-  .audience-container {
-    background-color: rgba(5, 70, 42, 0.33) !important;
-    background-image: linear-gradient(rgba(5, 70, 42, 0.33), rgba(5, 70, 42, 0.33)) !important;
-    color: #faf7f1 !important;
-  }
-  
-  .audience-box {
-    background-color: rgba(7, 62, 38, 0.9) !important;
-    background-image: linear-gradient(rgba(7, 62, 38, 0.9), rgba(7, 62, 38, 0.9)) !important;
-    color: #faf7f1 !important;
-  }
-  
-  .audience-box-title {
-    color: #faf7f1 !important;
-  }
-  
-  .pain-points-container {
-    background-color: #F6DED0 !important;
-    background-image: linear-gradient(#F6DED0, #F6DED0) !important;
-    color: #0d2b1e !important;
-  }
-  
-  .pain-points-title {
-    color: #0d2b1e !important;
-  }
-  
-  .pain-point-text {
-    color: #0d2b1e !important;
-  }
-  
-  .marketing-funnel-container {
-    background-color: #ffffff !important;
-    background-image: linear-gradient(#ffffff, #ffffff) !important;
-    color: #0d2b1e !important;
-  }
-  
-  .marketing-funnel-title {
-    color: #0d2b1e !important;
-  }
-  
-  .funnel-stage-title {
-    color: #0d2b1e !important;
-  }
-  
-  .strategic-pillars-container {
-    background-color: #F6DED0 !important;
-    background-image: linear-gradient(#F6DED0, #F6DED0) !important;
-    color: #0d2b1e !important;
-  }
-  
-  .strategic-pillars-title {
-    color: #0d2b1e !important;
-  }
-  
-  .content-calendar-container {
-    background-color: #ffffff !important;
-    background-image: linear-gradient(#ffffff, #ffffff) !important;
-    color: #0d2b1e !important;
-  }
-  
-  /* Force text colors for all elements */
-  h1, h2, h3, h4, h5, h6 {
-    color: #0d2b1e !important;
-  }
-  
-  p, span, div, li {
-    color: inherit !important;
-  }
-  
-  /* Fix background colors for all sections */
-  section {
-    background-color: inherit !important;
-  }
-  
-  /* Improve card layout on mobile */
-  .goal-card, .pillar-card, .calendar-card {
-    padding: 1rem !important;
-  }
-  
-  /* Improve table layout on mobile */
-  .audience-table {
-    font-size: 0.8rem !important;
-  }
-  
-  .audience-table td, .audience-table th {
-    padding: 0.5rem !important;
-  }
-  
-  /* Force all interactive elements */
-  button, .hero-button-primary, .hero-button-secondary {
-    background-image: linear-gradient(white, white) !important;
-  }
-  
-  .hero-button-primary {
-    background-color: var(--color-green) !important;
-    background-image: linear-gradient(var(--color-green), var(--color-green)) !important;
-  }
-}
-
-/* Android-specific color fixes */
-@media screen and (-webkit-min-device-pixel-ratio: 0) and (max-width: 1024px) {
-  .hero-section {
-    background-color: #F6DED0 !important;
-    color: #0d2b1e !important;
-  }
-  
-  .about-section {
-    background-color: #F6DED0 !important;
-    color: #0d2b1e !important;
-  }
-  
-  .goals-container {
-    background-color: #F6DED0 !important;
-    color: #0d2b1e !important;
-  }
-  
-  .audience-container {
-    background-color: rgba(5, 70, 42, 0.33) !important;
-    color: #faf7f1 !important;
-  }
-  
-  .pain-points-container {
-    background-color: #F6DED0 !important;
-    color: #0d2b1e !important;
-  }
-  
-  .marketing-funnel-container {
-    background-color: #ffffff !important;
-    color: #0d2b1e !important;
-  }
-  
-  .strategic-pillars-container {
-    background-color: #F6DED0 !important;
-    color: #0d2b1e !important;
-  }
-}
-
-/* Samsung Internet browser specific fixes */
-@media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px) {
-  .hero-section {
-    background-color: #F6DED0 !important;
-    color: #0d2b1e !important;
-  }
-  
-  .about-section {
-    background-color: #F6DED0 !important;
-    color: #0d2b1e !important;
-  }
-  
-  .goals-container {
-    background-color: #F6DED0 !important;
-    color: #0d2b1e !important;
-  }
-  
-  .audience-container {
-    background-color: rgba(5, 70, 42, 0.33) !important;
-    color: #faf7f1 !important;
-  }
-  
-  .pain-points-container {
-    background-color: #F6DED0 !important;
-    color: #0d2b1e !important;
-  }
-  
-  .marketing-funnel-container {
-    background-color: #ffffff !important;
-    color: #0d2b1e !important;
-  }
-  
-  .strategic-pillars-container {
-    background-color: #F6DED0 !important;
-    color: #0d2b1e !important;
-  }
-  
-  .content-calendar-container {
-    background-color: #ffffff !important;
-    color: #0d2b1e !important;
-  }
-  
-  /* Force CSS variables override for Samsung */
-  :root {
-    --color-ink: #0d2b1e !important;
-    --color-ink-soft: #45564c !important;
-    --color-paper: #faf7f1 !important;
-    --color-paper-raised: #f6ded0 !important;
-    --color-signal: #de6a2e !important;
-    --color-signal-soft: #f6ded0 !important;
-    --color-brass: #b78a46 !important;
-    --color-brass-soft: #e7d9bf !important;
-    --color-line: #ddd3c0 !important;
-    --color-green: #0a3206 !important;
-  }
-  
-  /* Force all elements to use correct colors */
-  * {
-    color-scheme: only light !important;
-  }
-  
-  section, div, span, p, h1, h2, h3, h4, h5, h6 {
-    color-scheme: only light !important;
-  }
-}
-
 @media (min-width: 640px) {
   .home-container {
     padding: 2.5rem 1.5rem;
@@ -2387,4 +2123,345 @@
 
 .font-italic {
   font-style: italic;
+}
+
+
+/* =========================================================
+   MOBILE COLOR THEME
+   Growth Station / Launch Playbook
+   ---------------------------------------------------------
+   Desktop colors remain unchanged.
+   Mobile <= 767px gets its own explicit color system.
+   This is intentionally browser-independent, including
+   Samsung Internet.
+   ========================================================= */
+
+@media screen and (max-width: 767px) {
+  :root {
+    --color-ink: #fff8ef !important;
+    --color-ink-soft: #d8c8bc !important;
+    --color-paper: #120b08 !important;
+    --color-paper-raised: #24120c !important;
+    --color-signal: #e8793f !important;
+    --color-signal-soft: #3d1d11 !important;
+    --color-brass: #d7b56d !important;
+    --color-brass-soft: #49371f !important;
+    --color-line: #765f50 !important;
+    --color-green: #063b14 !important;
+  }
+
+  html,
+  body,
+  #root {
+    background-color: #120b08 !important;
+    background-image: none !important;
+    color: #fff8ef !important;
+  }
+
+  .home-container {
+    background-color: #120b08 !important;
+    background-image: none !important;
+    color: #fff8ef !important;
+  }
+
+  /* Main sections */
+  .hero-section,
+  .about-section,
+  .goals-container,
+  .pain-points-container,
+  .strategic-pillars-container,
+  .marketing-funnel-container,
+  .content-calendar-container,
+  .plan-container,
+  .positioning-container {
+    background-color: #24120c !important;
+    background-image: none !important;
+    border-color: #765f50 !important;
+    color: #fff8ef !important;
+  }
+
+  /* Hero */
+  .hero-title,
+  .about-title,
+  .goals-container h2,
+  .pain-points-title,
+  .marketing-funnel-title,
+  .strategic-pillars-title,
+  .content-calendar-title,
+  .buying-behavior-title,
+  .funnel-stage-title,
+  .pillar-title,
+  .goal-title,
+  .plan-table-body {
+    color: #fff8ef !important;
+  }
+
+  .hero-eyebrow,
+  .about-eyebrow,
+  .marketing-funnel-subtitle,
+  .strategic-pillars-subtitle,
+  .content-calendar-subtitle,
+  .calendar-section-label,
+  .pillar-section-label,
+  .pillar-value-label,
+  .calendar-number,
+  .calendar-type,
+  .placeholder-text,
+  .funnel-stage-number,
+  .hero-tag-link {
+    color: #d7b56d !important;
+  }
+
+  .hero-description,
+  .about-text,
+  .about-card,
+  .goal-list,
+  .pillar-desc,
+  .pillar-section-content,
+  .pillar-list-item,
+  .funnel-stage-description,
+  .buying-behavior-item,
+  .slide-text,
+  .calendar-caption p,
+  .calendar-tov p,
+  .calendar-reference p,
+  .calendar-in p,
+  .plan-footer {
+    color: #d8c8bc !important;
+  }
+
+  .hero-button-primary {
+    background: #063b14 !important;
+    background-image: none !important;
+    color: #fff8ef !important;
+  }
+
+  .hero-button-secondary,
+  .section-copy-button,
+  .calendar-copy-button {
+    background: #2d1710 !important;
+    background-image: none !important;
+    border-color: #765f50 !important;
+    color: #fff8ef !important;
+  }
+
+  .hero-tag {
+    background: #3d1d11 !important;
+    background-image: none !important;
+    color: #d8c8bc !important;
+  }
+
+  /* Cards */
+  .about-card,
+  .goal-card,
+  .pillar-card,
+  .pain-point-card,
+  .buying-behavior-card,
+  .funnel-card,
+  .calendar-card,
+  .plan-table-wrapper {
+    background-color: #2d1710 !important;
+    background-image: none !important;
+    border-color: #765f50 !important;
+    color: #fff8ef !important;
+  }
+
+  .goal-icon,
+  .calendar-slide,
+  .pillar-number,
+  .funnel-stage-number,
+  .calendar-number,
+  .calendar-type {
+    background-color: rgba(232, 121, 63, 0.12) !important;
+    background-image: none !important;
+  }
+
+  .goal-bullet,
+  .pillar-list-item::before {
+    color: #e8793f !important;
+    background-color: #d7b56d !important;
+  }
+
+  /* UVP / dark green blocks */
+  .uvp-box {
+    background: #0d2417 !important;
+    background-image: none !important;
+    border-color: #d7b56d !important;
+    color: #fff8ef !important;
+  }
+
+  .uvp-text,
+  .pillar-value-text,
+  .strategic-note-text,
+  .calendar-objective {
+    color: #fff8ef !important;
+  }
+
+  /* Audience */
+  .audience-container {
+    background: #0d2417 !important;
+    background-image: none !important;
+    border-color: #765f50 !important;
+    color: #fff8ef !important;
+  }
+
+  .audience-box {
+    background: #123c25 !important;
+    background-image: none !important;
+    border-color: #52785f !important;
+    color: #fff8ef !important;
+  }
+
+  .audience-box-title,
+  .audience-table td,
+  .audience-table-value {
+    color: #fff8ef !important;
+  }
+
+  .audience-table th,
+  .audience-table-label,
+  .audience-box-eyebrow {
+    color: #d7b56d !important;
+  }
+
+  .audience-table th,
+  .audience-table td {
+    border-color: rgba(255, 248, 239, 0.2) !important;
+  }
+
+  /* Pain insight */
+  .pain-insight {
+    background: #063b14 !important;
+    background-image: none !important;
+    color: #fff8ef !important;
+  }
+
+  .pain-insight-label {
+    color: #d7b56d !important;
+  }
+
+  .pain-insight-text {
+    color: #fff8ef !important;
+  }
+
+  /* Strategic note */
+  .strategic-note {
+    background: rgba(215, 181, 109, 0.1) !important;
+    border-color: #d7b56d !important;
+  }
+
+  .strategic-note-title {
+    color: #d7b56d !important;
+  }
+
+  /* Strategic pillar navigation */
+  .pillar-number-btn {
+    background: #2d1710 !important;
+    background-image: none !important;
+    border-color: #d7b56d !important;
+    color: #d8c8bc !important;
+  }
+
+  .pillar-number-btn.active,
+  .pillar-number-btn:hover {
+    background: #e8793f !important;
+    border-color: #e8793f !important;
+    color: #fff8ef !important;
+  }
+
+  /* Calendar */
+  .content-calendar-pagination {
+    background: #2d1710 !important;
+    background-image: none !important;
+    border-color: #765f50 !important;
+  }
+
+  .content-calendar-scroll-box {
+    background: #160c09 !important;
+    background-image: none !important;
+    border-color: #765f50 !important;
+  }
+
+  .calendar-number-btn {
+    background: rgba(232, 121, 63, 0.08) !important;
+    background-image: none !important;
+    border-color: #d7b56d !important;
+    color: #d8c8bc !important;
+  }
+
+  .calendar-number-btn.active {
+    background: #e8793f !important;
+    border-color: #e8793f !important;
+    color: #fff8ef !important;
+  }
+
+  .calendar-reference-placeholder,
+  .calendar-link-placeholder {
+    background: rgba(232, 121, 63, 0.07) !important;
+    border-color: #d7b56d !important;
+  }
+
+  /* Plan */
+  .plan-table,
+  .plan-table-wrapper {
+    background-color: #2d1710 !important;
+  }
+
+  .plan-table thead tr,
+  .plan-table-header {
+    background: #0d2417 !important;
+    color: #fff8ef !important;
+  }
+
+  .plan-table-row {
+    border-color: #765f50 !important;
+  }
+
+  .plan-table-row:hover {
+    background: #3d1d11 !important;
+  }
+
+  .plan-time-badge {
+    background: #0d2417 !important;
+    color: #d7b56d !important;
+  }
+
+  .plan-push-badge.signal {
+    background: #3d1d11 !important;
+    color: #e8793f !important;
+  }
+
+  .plan-push-badge.muted {
+    background: #3a271d !important;
+    color: #d8c8bc !important;
+  }
+
+  /* Links / buttons inside mobile theme */
+  .calendar-tov-link {
+    background: rgba(215, 181, 109, 0.1) !important;
+    color: #d7b56d !important;
+    border-color: #d7b56d !important;
+  }
+
+  .calendar-link-button {
+    background: #e8793f !important;
+    background-image: none !important;
+    color: #fff8ef !important;
+  }
+
+  /* Generic text protection for the Home only.
+     Does not change layout or sizing. */
+  .home-container h1,
+  .home-container h2,
+  .home-container h3,
+  .home-container h4,
+  .home-container h5,
+  .home-container h6 {
+    color: #fff8ef !important;
+  }
+
+  .home-container p,
+  .home-container li {
+    color: #d8c8bc;
+  }
 }
